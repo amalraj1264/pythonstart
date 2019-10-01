@@ -1,12 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Feel free to Contact us</h1>
-</body>
-</html>
+
+{% extends 'base.html' %}
+{% block myContainer %}
+
+
+<div class="container">
+        <div class="row">
+
+            <div class="col col-12 col-sm-6 col-md-4">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatem, ut laborum consectetur ea dolor sequi nostrum vero iste quia reprehenderit. Ipsum sit possimus sed quibusdam asperiores blanditiis aliquid sapiente!
+            </div>
+            <div class="col col-12 col-sm-6 col-md-8">
+                    <table >
+                            <tr>
+                                <td>Student name</td>
+                                <td><input type="text" class="form-control"> </td>
+                            </tr>
+                            <tr>
+                                <td>Roll name</td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Admission number
+                                </td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><button class="btn btn-danger">Submit</button></td>
+                            </tr>
+                        </table>
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}
